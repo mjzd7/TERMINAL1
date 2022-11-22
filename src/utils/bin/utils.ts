@@ -28,8 +28,22 @@ export const gui = async (args: string[]): Promise<string> => {
 export const email = async (args: string[]): Promise<string> => {
   window.open('mailto:27dagar@gmail.com');
 
-  return 'Opening mailto:27dagar@gmail.com...';
+  return 'Opening mail to 27dagar@gmail.com...';
 };
+export const phone = async (args: string[]): Promise<string> => {
+  setTimeout(() => {
+  window.open('tel:9953953168')
+},1000);
+  return 'Opening my contact number in your dailer...';
+};
+export const contactme = async (args: string[]): Promise<string> => {
+  setTimeout(function () {
+    window.open('https://www.mohitdagar.tech/contacts_map');
+  }, 1200);
+
+  return `Opening Mohit's Contact information...`;
+}
+
 export const resume = async (args: string[]): Promise<string> => {
   setTimeout(function () {
     window.open('https://drive.google.com/file/d/1nxWM-thVOKAewFdLtpLikAy1WS_2MkQS/view?usp=share_link');
